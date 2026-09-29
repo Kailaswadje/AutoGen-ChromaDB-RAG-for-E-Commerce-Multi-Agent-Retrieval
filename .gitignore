@@ -1,0 +1,31 @@
+# Environment & secrets — NEVER commit these
+.env
+*.env
+.env.local
+
+# Jupyter checkpoint files (auto-saved snapshots — never needed in version control)
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# AutoGen cache (stores past LLM call results to save on repeated API calls)
+.cache/
+
+# ChromaDB persistence (only relevant if switched from in-memory Client to PersistentClient)
+chroma_db/
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
